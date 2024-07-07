@@ -11,7 +11,7 @@ namespace Starwars
         static void Main(string[] args)
         {
 <<<<<<< Updated upstream
-            fff
+            fff tuzt
 =======
             int szam2 = 2;
 >>>>>>> Stashed changes
