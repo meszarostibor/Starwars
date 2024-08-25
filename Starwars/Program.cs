@@ -10,8 +10,10 @@ namespace Starwars
     {
         static void Main(string[] args)
         {
-            int szam2 = 2;
-            Console.WriteLine('p');
+            Erohasznalo Jedi = new Erohasznalo("Luke");
+
+           
+            Console.WriteLine(Jedi);
             Console.ReadKey();
         }
     }
