@@ -10,11 +10,9 @@ namespace Starwars
     {
         static void Main(string[] args)
         {
-<<<<<<< Updated upstream
- 
-=======
             int szam2 = 2;
->>>>>>> Stashed changes
+            Console.WriteLine('p');
+            Console.ReadKey();
         }
     }
 }
