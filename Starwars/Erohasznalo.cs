@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Starwars
 {
-    internal class Erohasznalo
+    public class Erohasznalo
     {
         #region Mezők
         string nev = "";

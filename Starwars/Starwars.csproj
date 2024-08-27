@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Erohasznalo.cs" />
     <Compile Include="KardSzine.cs" />
+    <Compile Include="Mester.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
