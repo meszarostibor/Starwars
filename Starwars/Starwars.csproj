@@ -45,9 +45,11 @@
   <ItemGroup>
     <Compile Include="Erohasznalo.cs" />
     <Compile Include="KardSzine.cs" />
+    <Compile Include="KopenyFajta.cs" />
     <Compile Include="Mester.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tanitvany.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Starwars
 {
-    public enum KardSzine
+    public enum KopenyFajta
     {
-        KEk = 0,
-        ZOLD = 1,
-        SARGA = 2,
-        LILA = 3,
-        PIROS = 4
-    }
+        KAPUCNIS_BARNA =0,
+        KAPUCNIS_SZURKE =1,
+        LENGE_VASZON = 2,
 
+    }
 }

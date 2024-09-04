@@ -10,10 +10,15 @@ namespace Starwars
     {
         static void Main(string[] args)
         {
-            Erohasznalo Jedi = new Erohasznalo("Luke");
+            Mester Jedi0 = new Mester("Luke");
+            Console.WriteLine(Jedi0);
+            Console.WriteLine();
+            Mester Jedi1 = new Mester("Ben Kenobi",true,20,KopenyFajta.KAPUCNIS_BARNA);
+            Console.WriteLine(Jedi1);
+            Console.WriteLine();
 
-           
-            Console.WriteLine(Jedi);
+            Tanitvany Padavan0 = new Tanitvany("Anakin");
+            Console.WriteLine(Padavan0);
             Console.ReadKey();
         }
     }

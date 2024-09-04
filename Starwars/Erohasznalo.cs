@@ -14,7 +14,7 @@ namespace Starwars
         KardSzine kardSzine = 0;
         bool oldal = true;
         byte oldalValtozasSzama = 0;
-        Random rnd = new Random();
+        public Random rnd = new Random();
         #endregion
 
         public string Nev
@@ -86,10 +86,10 @@ namespace Starwars
 
             if (oldal == false)
             {
-                kardSzine = 0;
+                kardSzine = (KardSzine)4;
             }
             else {
-                kardSzine = (KardSzine)rnd.Next(1, 5);
+                kardSzine = (KardSzine)rnd.Next(0, 4);
             }
         }
         #endregion
