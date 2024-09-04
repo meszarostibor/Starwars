@@ -25,12 +25,11 @@ namespace Starwars
                 {
                     kepzettsegiSzint = value;
                 }
-                else
+                else//kjlkj
                 {
                     kepzettsegiSzint = 100;
                 }
             }
-
         }
 
 
