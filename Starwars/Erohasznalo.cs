@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 namespace Starwars
 {
+
+
     public class Erohasznalo
     {
         #region Mezők
+        public static Random rnd = new Random();
         string nev = "";
         int midiklorianokSzama = 0;
         KardSzine kardSzine = 0;
         bool oldal = true;
         byte oldalValtozasSzama = 0;
-        public Random rnd = new Random();
+
         #endregion
 
         public string Nev
@@ -65,6 +68,7 @@ namespace Starwars
         #region Konstruktor
         public Erohasznalo(string nev)
         {
+
             if (nev.Length > 3)
             {
                 this.nev = nev;
@@ -80,7 +84,8 @@ namespace Starwars
             {
                 oldal = true;
             }
-            else { 
+            else
+            {
                 oldal = false;
             }
 
@@ -88,7 +93,8 @@ namespace Starwars
             {
                 kardSzine = (KardSzine)4;
             }
-            else {
+            else
+            {
                 kardSzine = (KardSzine)rnd.Next(0, 4);
             }
         }

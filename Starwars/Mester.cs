@@ -10,6 +10,7 @@ namespace Starwars
 
     public class Mester : Erohasznalo
     {
+
         private bool tanacstag = false;
         KopenyFajta kopeny;
         private int korabbiTanitvanyok;
@@ -59,6 +60,7 @@ namespace Starwars
         #region Konstruktorok
         public Mester(string nev) : base(nev + " Mester")
         {
+
             if (rnd.Next(0, 2) == 0)
             {
                 Tanacstag = false;

@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Starwars
 {
-    internal class Tanitvany : Erohasznalo
+    public class Tanitvany : Erohasznalo
     {
-
         float tincsHossza;
         int kepzettsegiSzint;
 
-        public double TincsHossza
+        public float TincsHossza
         {
             get { return tincsHossza; }
         }
@@ -38,24 +37,28 @@ namespace Starwars
         #region Konstruktorok
         public Tanitvany(string nev) : base(nev + " Ifjú")
         {
-            tincsHossza = rnd.Next(5, 160)/10;
-            kepzettsegiSzint = rnd.Next(0, 101);
+            float hossz = 0;
+            while (hossz < 0.5 || hossz > 15)
+            {
+                hossz = (float)rnd.NextDouble() * 15;
+            }
+            this.tincsHossza = hossz;
+            this.kepzettsegiSzint = rnd.Next(0, 101);
         }
 
-        public Tanitvany(string nev,float tincsHossza,int kepzettsegiSzint) : base(nev + " Ifjú")
+        public Tanitvany(string nev, float tincsHossza, int kepzettsegiSzint) : base("Ifjú " + nev)
         {
             if (tincsHossza >= 0.5 && tincsHossza <= 15)
             {
                 this.tincsHossza = tincsHossza;
             }
-            else 
+            else
             {
                 throw new Exception("Az érték tartományon kívűl");
-            }   
+            }
             this.tincsHossza = tincsHossza;
             KepzettsegiSzint = kepzettsegiSzint;
         }
-
 
         #endregion
         #region Destructor
